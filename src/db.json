@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "description": "Cocinar",
+        "responsable": "Andrea"
+    },
+    {
+        "id": 2,
+        "description": "Programar",
+        "responsable": "Javier"
+    },
+    {
+        "id": 3,
+        "description": "Planificar",
+        "responsable": "Constanza"
+    },
+    {
+        "id": 4,
+        "description": "Comprar",
+        "responsable": "Mario"
+    }
+]
