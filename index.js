@@ -1,7 +1,6 @@
-import express, { json } from 'express';
-import http from 'http';
-import '@babel/polyfill';
-import data from './db.json';
+const express = require('express');
+const http = require('http');
+const data = require('./db.json');
 
 const app = express();
 const server = http.createServer(app);
