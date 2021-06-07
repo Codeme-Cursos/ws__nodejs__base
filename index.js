@@ -1,11 +1,9 @@
 const express = require('express');
 const http = require('http');
 const data = require('./db.json');
-
 const app = express();
-const server = http.createServer(app);
-const port = 4000;
 const prefix = '/api';
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 
@@ -90,6 +88,7 @@ app.delete(`${prefix}/task/:id`, (req, res) => {
     }
 });
 
+const server = http.createServer(app);
 server.listen(port, () => {
     console.log(`Server on port ${port}`)
 });
