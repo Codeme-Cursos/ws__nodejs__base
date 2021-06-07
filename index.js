@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const port = 4000;
 const prefix = '/api';
 
-app.use(json());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Página de inicio')
